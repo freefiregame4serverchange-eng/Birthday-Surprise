@@ -330,8 +330,8 @@ border-radius:20px;
 max-width:900px;
 
 backdrop-filter:blur(5px);
-max-height:70vh;
-overflow-y:auto;
+max-height:none;
+overflow-y:visiblel;
 
 }
 
@@ -804,9 +804,8 @@ Will You Be Mine? 💞
 
 
 <button id="noBtn"
-ontouchstart="moveButton()"
-onmouseover="moveButton()"
-onclick="moveButton()">
+ontouchstart="moveButton(); return false;"
+onclick="return false;">
 😅 Sorry
 </button>
 
@@ -979,50 +978,22 @@ createConfetti();
 
 
 
-const noBtn=document.getElementById('noBtn');
+const noBtn = document.getElementById('noBtn');
 
+function moveButton() {
+    let x = Math.random() * (window.innerWidth - 200);
+    let y = Math.random() * (window.innerHeight - 100);
 
-
-
-if(noBtn){
-
-
-
-
-noBtn.addEventListener('mouseover',()=>{
-
-
-
-
-let x=Math.random()*(window.innerWidth-200);
-
-
-
-
-let y=Math.random()*(window.innerHeight-100);
-
-
-
-
-noBtn.style.left=x+'px';
-
-
-
-
-noBtn.style.top=y+'px';
-
-
-
-
-});
-
-
-
-
+    noBtn.style.position = 'fixed';
+    noBtn.style.left = x + 'px';
+    noBtn.style.top = y + 'px';
 }
 
-
-
+if (noBtn) {
+    noBtn.addEventListener('mouseover', moveButton);
+    noBtn.addEventListener('touchstart', moveButton);
+    noBtn.addEventListener('click', moveButton);
+}
 
 function createConfetti(){
 

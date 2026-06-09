@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Cutie ❤️</title>
+
+
+
+
+<style>
+
+
+
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+font-family:'Poppins',sans-serif;
+
+}
+
+
+
+
+body{
+
+overflow:hidden;
+
+background:#ff4f8b;
+
+color:white;
+
+}
+
+
+
+
+.page{
+
+width:100%;
+
+height:100vh;
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+text-align:center;
+
+padding:20px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+
+
+.active{
+
+display:flex;
+
+}
+
+
+
+
+h1{
+
+font-size:3rem;
+
+margin-bottom:20px;
+
+text-shadow:0 0 20px white;
+
+}
+
+
+
+
+p{
+
+font-size:1.2rem;
+
+max-width:800px;
+
+line-height:1.8;
+
+}
+
+
+
+
+button{
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:30px;
+
+font-size:18px;
+
+cursor:pointer;
+
+margin-top:25px;
+
+background:white;
+
+color:#ff2e7a;
+
+font-weight:bold;
+
+transition:0.3s;
+
+}
+
+
+
+
+button:hover{
+
+transform:scale(1.08);
+
+}
+
+
+
+
+.love-bg{
+
+background:linear-gradient(
+
+135deg,
+
+#ff2e7a,
+
+#ff6fa5,
+
+#ff8dc7
+
+);
+
+}
+
+
+
+
+.hearts{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+overflow:hidden;
+
+top:0;
+
+left:0;
+
+pointer-events:none;
+
+}
+
+
+
+
+.hearts span{
+
+position:absolute;
+
+bottom:-50px;
+
+font-size:25px;
+
+animation:floatHeart linear infinite;
+
+}
+
+
+
+
+@keyframes floatHeart{
+
+0%{
+
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh);
+
+opacity:0;
+
+}
+
+}
+
+
+
+
+.balloon{
+
+position:absolute;
+
+bottom:-150px;
+
+width:70px;
+
+height:90px;
+
+border-radius:50%;
+
+animation:floatBalloon 12s linear infinite;
+
+}
+
+
+
+
+.balloon:after{
+
+content:'';
+
+position:absolute;
+
+width:2px;
+
+height:90px;
+
+background:white;
+
+left:50%;
+
+top:90px;
+
+}
+
+
+
+
+@keyframes floatBalloon{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+100%{
+
+transform:translateY(-130vh);
+
+}
+
+}
+
+
+
+
+.photo-heart{
+
+width:340px;
+
+height:300px;
+
+background:white;
+
+clip-path:path("M170 290 C20 180 0 90 70 40 C120 5 170 40 170 80 C170 40 220 5 270 40 C340 90 320 180 170 290");
+
+overflow:hidden;
+
+box-shadow:0 0 40px white;
+
+margin-bottom:20px;
+
+}
+
+
+
+
+.photo-heart img{
+
+width:100%;
+
+height:100%;
+
+object-fit:contain;
+
+background:#fff;
+
+}
+
+
+
+
+.card{
+
+background:rgba(255,255,255,0.15);
+
+padding:20px;
+
+margin:12px;
+
+border-radius:20px;
+
+max-width:900px;
+
+backdrop-filter:blur(5px);
+
+}
+
+
+
+
+.rose{
+
+position:absolute;
+
+font-size:30px;
+
+animation:fallRose 10s linear infinite;
+
+}
+
+
+
+
+@keyframes fallRose{
+
+0%{
+
+transform:translateY(-100px);
+
+}
+
+100%{
+
+transform:translateY(120vh);
+
+}
+
+}
+
+
+
+
+#noBtn{
+
+position:absolute;
+
+}
+
+
+
+
+.confetti{
+
+position:absolute;
+
+font-size:25px;
+
+animation:confettiFall 5s linear forwards;
+
+}
+
+
+
+
+@keyframes confettiFall{
+
+0%{
+
+transform:translateY(-100px);
+
+}
+
+100%{
+
+transform:translateY(120vh);
+
+}
+
+}
+
+
+
+
+</style>
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+<!-- PAGE 1 -->
+
+
+
+
+<div class="page active love-bg" id="page1">
+
+
+
+
+<div class="hearts" id="hearts1"></div>
+
+
+
+
+<h1>Hey Cutie ❣️💞</h1>
+
+
+
+
+<p>
+
+Unfortunately, I couldn't be there to celebrate your birthday
+
+in person or give you a physical gift.
+
+<br><br>
+
+So I thought of doing something a little different...
+
+<br><br>
+
+I made this small virtual surprise especially for you. ❤️
+
+</p>
+
+
+
+
+<button onclick="nextPage(2)">
+
+🎁 Open My Surprise
+
+</button>
+
+
+
+
+</div>
+
+
+
+
+<!-- PAGE 2 -->
+
+
+
+
+<div class="page love-bg" id="page2">
+
+
+
+
+<div class="hearts" id="hearts2"></div>
+
+
+
+
+<div class="balloon" style="left:10%;background:#ff4d6d"></div>
+
+<div class="balloon" style="left:25%;background:#ffd166;animation-delay:2s"></div>
+
+<div class="balloon" style="left:70%;background:#06d6a0"></div>
+
+<div class="balloon" style="left:85%;background:#ef476f;animation-delay:3s"></div>
+
+
+
+
+<div class="photo-heart">
+
+<img src="Cutie.jpeg">
+
+</div>
+
+
+
+
+<h1>
+
+Many More Happy Returns Of The Day
+
+My Cutie ❣️💞
+
+</h1>
+
+
+
+
+<p>
+
+May your day be filled with happiness,
+
+laughter, love and everything your heart wishes for. 🫶✨
+
+</p>
+
+
+
+
+<button onclick="nextPage(3)">
+
+Continue ❤️
+
+</button>
+
+
+
+
+</div>
+<!-- PAGE 3 -->
+
+
+
+
+<div class="page love-bg" id="page3">
+
+
+
+
+<div class="hearts" id="hearts3"></div>
+
+
+
+
+<h1>🌸 Things I Like About You 🌸</h1>
+
+
+
+
+<div class="card">
+
+💗 Your maturity and the way you think before making any decision.
+
+It shows how thoughtful and responsible you are.
+
+</div>
+
+
+
+
+<div class="card">
+
+👀 Your eyes... honestly, they should come with a warning label.
+
+Every time I look at them, they manage to steal my attention completely. 💫
+
+</div>
+
+
+
+
+<div class="card">
+
+🎙️ Your voice... I don't know how you do it,
+
+but every time I hear it,
+
+I find myself falling for it all over again.
+
+It's just too cute to resist. ❤️
+
+</div>
+
+
+
+
+<button onclick="nextPage(4)">
+
+💌 A Little Message For You
+
+</button>
+
+
+
+
+</div>
+
+
+
+
+<!-- PAGE 4 -->
+
+
+
+
+<div class="page love-bg" id="page4">
+
+
+
+
+<div class="hearts" id="hearts4"></div>
+
+
+
+
+<span class="rose" style="left:10%">🌹</span>
+
+<span class="rose" style="left:30%;animation-delay:2s">🌹</span>
+
+<span class="rose" style="left:60%;animation-delay:4s">🌹</span>
+
+<span class="rose" style="left:80%;animation-delay:1s">🌹</span>
+
+
+
+
+<h1>🌹 Something I Want To Tell You 🌹</h1>
+
+
+
+
+<div class="card">
+
+
+
+
+<h2>💌 A Little Message For You 💌</h2>
+
+
+
+
+<br>
+
+
+
+
+<p>
+
+
+
+
+I know you have your fears and worries when it comes to relationships,
+
+and I completely understand them.
+
+
+
+
+<br><br>
+
+
+
+
+All I want you to know is that I'm not someone who wants to hurt you
+
+or become a reason for your tears or regrets.
+
+
+
+
+<br><br>
+
+
+
+
+What I can genuinely promise is my honesty,
+
+care, respect, loyalty, and consistent effort to keep you happy.
+
+
+
+
+<br><br>
+
+
+
+
+I may not be perfect,
+
+but my intentions towards you are genuine,
+
+and I would love the opportunity to prove that through my actions.
+
+
+
+
+<br><br>
+
+
+
+
+I hope you'll make the decision that feels right to your heart.
+
+
+
+
+<br><br>
+
+
+
+
+And whatever your answer may be,
+
+I wish you a very Happy Birthday once again, Cutie. 🫶💕
+
+
+
+
+</p>
+
+
+
+
+</div>
+
+
+
+
+<button onclick="nextPage(5)">
+
+❤️ One Last Thing I Want To Ask You...
+
+</button>
+
+
+
+
+</div>
+
+
+
+
+<!-- PAGE 5 -->
+
+
+
+
+<div class="page love-bg" id="page5">
+
+
+
+
+<div class="hearts" id="hearts5"></div>
+
+
+
+
+<h1 style="font-size:5rem;">
+
+I Love You ❤️
+
+</h1>
+
+
+
+
+<h2>
+
+Will You Be Mine? 💞
+
+</h2>
+
+
+
+
+<br><br>
+
+
+
+
+<button onclick="acceptLove()">
+
+💖 Love You Too
+
+</button>
+
+
+
+
+<button id="noBtn">
+
+😅 Sorry
+
+</button>
+
+
+</div>
+<!-- PAGE 6 -->
+
+
+
+
+<div class="page love-bg" id="page6">
+
+
+
+
+<div class="hearts" id="hearts6"></div>
+
+
+
+
+<h1>💞 Congratulations! 💞</h1>
+
+
+
+
+<p>
+
+
+
+
+A new journey begins today.
+
+
+
+
+<br><br>
+
+
+
+
+May it be filled with trust,
+
+
+
+
+<br>
+
+
+
+
+laughter,
+
+
+
+
+<br>
+
+
+
+
+endless conversations,
+
+
+
+
+<br>
+
+
+
+
+and beautiful memories together. ✨❤️
+
+
+
+
+<br><br><br>
+
+
+
+
+Thank You Cutie 🌸
+
+
+
+
+<br><br>
+
+
+
+
+— Kiran 💗
+
+
+
+
+</p>
+
+
+
+
+</div>
+
+
+
+
+<script>
+
+
+
+
+function nextPage(pageNumber){
+
+
+
+
+document.querySelectorAll('.page').forEach(page=>{
+
+page.classList.remove('active');
+
+});
+
+
+
+
+document.getElementById('page'+pageNumber).classList.add('active');
+
+
+
+
+if(pageNumber===2){
+
+createConfetti();
+
+}
+
+
+
+
+}
+
+
+
+
+function acceptLove(){
+
+
+
+
+document.querySelectorAll('.page').forEach(page=>{
+
+page.classList.remove('active');
+
+});
+
+
+
+
+document.getElementById('page6').classList.add('active');
+
+
+
+
+createConfetti();
+
+
+
+
+}
+
+
+
+
+const noBtn=document.getElementById('noBtn');
+
+
+
+
+if(noBtn){
+
+
+
+
+noBtn.addEventListener('mouseover',()=>{
+
+
+
+
+let x=Math.random()*(window.innerWidth-200);
+
+
+
+
+let y=Math.random()*(window.innerHeight-100);
+
+
+
+
+noBtn.style.left=x+'px';
+
+
+
+
+noBtn.style.top=y+'px';
+
+
+
+
+});
+
+
+
+
+}
+
+
+
+
+function createConfetti(){
+
+
+
+
+for(let i=0;i<120;i++){
+
+
+
+
+let conf=document.createElement('div');
+
+
+
+
+conf.innerHTML='🎊';
+
+
+
+
+conf.classList.add('confetti');
+
+
+
+
+conf.style.left=Math.random()*100+'vw';
+
+
+
+
+conf.style.animationDuration=
+
+(3+Math.random()*3)+'s';
+
+
+
+
+document.body.appendChild(conf);
+
+
+
+
+setTimeout(()=>{
+
+conf.remove();
+
+},6000);
+
+
+
+
+}
+
+
+
+
+}
+
+
+
+
+function createHearts(containerId){
+
+
+
+
+const container=document.getElementById(containerId);
+
+
+
+
+if(!container) return;
+
+
+
+
+for(let i=0;i<25;i++){
+
+
+
+
+let heart=document.createElement('span');
+
+
+
+
+heart.innerHTML='❤️';
+
+
+
+
+heart.style.left=Math.random()*100+'%';
+
+
+
+
+heart.style.animationDuration=
+
+(6+Math.random()*8)+'s';
+
+
+
+
+heart.style.fontSize=
+
+(15+Math.random()*25)+'px';
+
+
+
+
+container.appendChild(heart);
+
+
+
+
+}
+
+
+
+
+}
+
+
+
+
+createHearts('hearts1');
+
+createHearts('hearts2');
+
+createHearts('hearts3');
+
+createHearts('hearts4');
+
+createHearts('hearts5');
+
+createHearts('hearts6');
+
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
